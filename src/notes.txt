@@ -1,0 +1,35 @@
+Some information about a checkers board
+
+It is an 8x8 board
+
+A light set of pieces and a dark set of pieces
+
+Each set has 12 pices placed on the dark squares of the first 3 rows
+
+The dark colour goes first
+
+
+Notes for jumpChecker
+
+Always called in findPotenialMoves, is void, just adds to an arrray (thank you for memory)
+Ignores everything that isnt an opposite pieice
+If an opposite piece is identified,
+function calculates if a valid jump is there (e.g if the space in the same direction as the opposite
+is empty)
+If jump is valid, it marks it adds it to the list of potetial moves (which will become grey squares)
+add adds the tile that it jumped to a "Jumped List" stored within Cell object
+Any jumped cells from the current cell in the function is also added to the this list
+
+The functon then calls itself on the new grey cell.
+
+If no valid jump is found then the function returns without adding anything to the grey list
+
+TODO: Implement king functionality (might be a pain in the ass with the icons)
+
+TODO: Have a win checker
+
+TODO: Have a endscreen and a start screen
+
+TODO: If can be fucked have AI for one player mode
+
+
